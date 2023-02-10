@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  excalidraw:
+    build: .
+    container_name: excalidraw
+    ports:
+      - "8081:80"
+    restart: always
