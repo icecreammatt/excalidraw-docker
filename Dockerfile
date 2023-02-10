@@ -5,7 +5,7 @@ FROM node:13-alpine AS build
 
   # COMIT_REF can also be master but im pinning so I know it wuii build in the future.
   ARG COMMIT_REF=v0.14.2
-  RUN git clone --depth=1 --branch=$COMMIT_REF https://github.com/excalidraw/excalidraw.git . \
+  RUN git clone --depth=1 --branch=$COMMIT_REF https://github.com/icecreammatt/excalidraw.git . \
     && rm -rf .git
 
   RUN npm install
